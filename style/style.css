@@ -1,0 +1,168 @@
+:root{
+    --main : #d4d8dd;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: "SourceHanSerif-Regular";
+    src: url("../font/SourceHanSerif-Regular.woff");
+}
+
+@font-face {
+    font-family: "SourceHanSerif-Heavy";
+    src: url("../font/SourceHanSerif-Heavy.woff");
+}
+
+@font-face {
+    font-family: "SourceHanSans-Regular";
+    src: url("../font/SourceHanSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SourceHanSans-Bold";
+    src: url("../font/SourceHanSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Geometos";
+    src: url("../font/Geometos.ttf");
+}
+
+
+body{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: medium;
+}
+
+.font-geometos{
+    color: rgb(212, 216, 221);
+    font-family: 'Geometos';
+    font-size: small;
+}
+.font-hansans-bold{
+    color: rgb(212, 216, 221);
+    font-family: 'SourceHanSans-Bold';
+}
+.font-hansans-regular{
+    color: rgb(212, 216, 221);
+    font-family: 'SourceHanSans-Regular';
+}
+.font-hanserif-heavy{
+    color: rgb(212, 216, 221);
+    font-family: 'SourceHanSerif-Heavy';
+}
+.font-hanserif-regular{
+    color: rgb(212, 216, 221);
+    font-family: 'SourceHanSerif-Regular';
+}
+.font-mont-regular{
+    color: rgb(212, 216, 221);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.font-mont-semibold{
+    color: rgb(212, 216, 221);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.font-mont-bold{
+    color: rgb(212, 216, 221);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.font-mont-black{
+    color: rgb(212, 216, 221);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.font-libre-regular{
+    color: rgb(212, 216, 221);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+}
+.font-libre-bold{
+    color: rgb(212, 216, 221);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+}
+.font-bebas{
+    color: rgb(212, 216, 221);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+}
+
+.letter-spacing{
+    letter-spacing: 0.3rem;
+}
+.letter-spacing-sm{
+    letter-spacing: 0.25rem;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.main{
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../image/background-main.png);
+}
+
+.sub-main{
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub-main img{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.navbar-brand img{
+    height: 40px;
+}
+
+.filter-contrast{
+    filter: contrast(80%);
+}
+
+.nav-item a{
+    margin: 0 1.1rem 0px 1.1rem;
+    text-decoration: none;
+    color: var(--main);
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+    transition-property: opacity;
+}
+
+.nav-item a:hover{
+    opacity: 80%;
+}
+
+.title-logo{
+    width: 400px;
+}
+
+/* .logo-svg{
+    -webkit-mask-image: url(image/logo.png);
+    mask-image: url(image/logo.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+polygon{
+    fill: blue;
+    stroke: aqua;
+} */
