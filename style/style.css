@@ -30,6 +30,9 @@
     src: url("../font/Geometos.ttf");
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Inconsolata', monospace;
@@ -202,14 +205,65 @@ body{
     align-items: center;
 
 }
-/* .logo-svg{
-    -webkit-mask-image: url(image/logo.png);
-    mask-image: url(image/logo.png);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
+
+.faction-wrapper{
+    overflow-x: scroll;
 }
 
-polygon{
-    fill: blue;
-    stroke: aqua;
-} */
+.faction-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.faction-wrapper .content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    flex: none;
+}
+
+.faction-logo{
+    width: 12rem;
+    filter: contrast(50%);
+}
+
+@keyframes scrollAnimate{
+    0% {
+        opacity: 0;
+    }
+    
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes scrollNextAnimate{
+    0% {
+        transform: translateX(-4.4rem);
+        opacity: 0;
+    }
+    
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-1rem);
+        opacity: 0;
+    }
+}
+
+.scroll-next-animate{
+    animation: scrollNextAnimate 3s ease-in-out infinite;
+}
+
+.wrapper-scroll-animate{
+    animation: scrollAnimate 3s ease-in-out infinite;
+}
