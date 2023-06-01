@@ -140,6 +140,9 @@ body{
     animation-name: onLoadBG;
     animation-duration: 1.5s;
     animation-timing-function: ease;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    transition-property: transform;
 }
 
 .sub-main img{
