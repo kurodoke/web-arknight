@@ -28,9 +28,10 @@ function generateRandomText(len){
     return resText;
 }
 
+var finishText = "ARKNIGHTS";
+
 function appendText(len){
     let resText = "";
-    let finishText = "FACTIONS";
 
     while (resText.length < len){
         resText += finishText[resText.length];
@@ -40,8 +41,7 @@ function appendText(len){
 }
 
 window.onload = async function(event){
-    let startText = "//////////////";
-    let finishText = "FACTIONS";
+    let startText = "//////////////////";
     let currentLength = 0;
     
     for(let i = 0; i < startText.length; i += 2){
@@ -50,6 +50,8 @@ window.onload = async function(event){
         await delay(200); //0.2s
     }
 
+    await delay(200)
+    
     for(let i = -1; i <= finishText.length; i++){
         randomText__component.innerHTML = appendText(i) +  generateRandomText(i < 1 ? finishText.length : finishText.length - i);
         await delay(80); //0.08s

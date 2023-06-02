@@ -244,6 +244,12 @@ img {
     filter: contrast(50%);
 }
 
+.fraction-static-text{
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: rgb(212, 216, 221) 1px;
+}
+
 @keyframes scrollAnimate{
     0% {
         opacity: 0;
@@ -317,8 +323,18 @@ img {
     transition: all .3s ease-in-out;
 }
 
+@keyframes onloadAlbumImageAnimate {
+    from{
+        filter: grayscale(1);
+    }
+    to{
+        filter: grayscale(0);
+    }
+}
+
 .album-image{
     width: 19rem;
+    animation: onloadAlbumImageAnimate 2s ease 1;
 }
 
 .arrow-album{
@@ -395,4 +411,67 @@ img {
     border: 0.04rem solid #fff;
     background: #5e5e5e;
     left: 0%;
+}
+
+@keyframes newsLoopingText {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+.news-looping-text{
+    text-align: left;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 50%;
+    border-left: 0.24rem solid transparent;
+    border-right: 0.24rem solid transparent;
+    overflow: hidden;
+    color: transparent;
+    -webkit-text-stroke: hsla(0, 6%, 82%, 0.2) 1px;
+}
+
+.news-looping-text::after, .news-looping-text::before{
+    font-size: 3rem;
+    content: "BREAKING NEWS BREAKING NEWS";
+    display: inline-block;
+    padding-right: 0.6rem;
+    animation: newsLoopingText 20s linear infinite;
+}
+
+.news-banner-slider{
+    display: flex;
+    justify-content: center;
+}
+
+.news-banner-slider-wrapper{
+    width: 75%;
+}
+
+.news-banner-content{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    flex: none;
+}
+
+.news-banner-item{
+    width: 100%;
+    border-color: var(--main);
+    transform: translateX(0%);
+}
+
+
+.corner{
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    background-color:#91959d;
 }
