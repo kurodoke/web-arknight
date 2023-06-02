@@ -43,6 +43,22 @@ body{
     font-size: medium;
 }
 
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+.no-select{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 .font-geometos{
     color: rgb(212, 216, 221);
     font-family: 'Geometos';
@@ -269,4 +285,24 @@ body{
 
 .wrapper-scroll-animate{
     animation: scrollAnimate 3s ease-in-out infinite;
+}
+
+.album-content{
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.album-page{
+    width: 100vw;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0%);
+}
+
+.album-image{
+    width: 19rem;
 }

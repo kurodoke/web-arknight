@@ -15,7 +15,7 @@ wrapper__component.addEventListener("scroll", function(event) {
     sub__background.style.transform = `translateX(-${percentase}%)`;
 })
 
-var randomText = document.querySelector(".fraction-random-text");
+var randomText__component = document.querySelector(".fraction-random-text");
 
 const delay = ms => new Promise(res => setTimeout(res, ms))
 
@@ -45,14 +45,14 @@ window.onload = async function(event){
     let currentLength = 0;
     
     for(let i = 0; i < startText.length; i += 2){
-        randomText.innerHTML += startText[i];
-        randomText.innerHTML += startText[i+1];
-        await delay(200); //0.05s
+        randomText__component.innerHTML += startText[i];
+        randomText__component.innerHTML += startText[i+1];
+        await delay(200); //0.2s
     }
 
     for(let i = -1; i <= finishText.length; i++){
-        randomText.innerHTML = appendText(i) +  generateRandomText(i < 1 ? finishText.length : finishText.length - i);
-        await delay(80); //0.05s
+        randomText__component.innerHTML = appendText(i) +  generateRandomText(i < 1 ? finishText.length : finishText.length - i);
+        await delay(80); //0.08s
     }
     
 }
