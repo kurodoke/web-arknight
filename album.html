@@ -14,7 +14,7 @@
     <div class="container-fluid main position-relative">
 
         <!-- background sub -->
-        <div class="position-absolute sub-main">
+        <div class="position-absolute sub-main no-select">
             <img src="image/background-album.jpg" style="object-fit: cover; opacity: 60%;" alt="">
         </div>
         <!-- background sub -->
@@ -56,38 +56,51 @@
         <!-- navbar -->
 
         <!-- content -->
-        <div class="position-absolute ms-5 translate-middle-y" style="top: 50%;">
-            <div class="position-relative album-wrapper d-flex">
-                <div class="album-content">
-                    <div class="album-page">
-                        <div class="row mb-3">
-                            <img src="image/album/1.jpg" class="album-image" alt="">
-                            <img src="image/album/2.jpg" class="album-image" alt="">
-                            <img src="image/album/3.jpg" class="album-image" alt="">
-                            <img src="image/album/4.jpg" class="album-image" alt="">
+        <div class="album-container">
+            <div class="position-absolute content no-select" style="top: 50%; left: 50%; transform: translate(-25%, -50%);">
+                <div class="album-wrapper d-flex">
+                    <div class="album-content">
+                        <div class="album-page">
+                            <div class="row mb-3">
+                                <img src="image/album/1.jpg" class="album-image" alt="">
+                                <img src="image/album/2.jpg" class="album-image" alt="">
+                                <img src="image/album/3.jpg" class="album-image" alt="">
+                                <img src="image/album/4.jpg" class="album-image" alt="">
+                            </div>
+                            <div class="row">
+                                <img src="image/album/5.jpg" class="album-image" alt="">
+                                <img src="image/album/6.jpg" class="album-image" alt="">
+                                <img src="image/album/7.jpg" class="album-image" alt="">
+                                <img src="image/album/8.jpg" class="album-image" alt="">
+                            </div>
                         </div>
-                        <div class="row">
-                            <img src="image/album/5.jpg" class="album-image" alt="">
-                            <img src="image/album/6.jpg" class="album-image" alt="">
-                            <img src="image/album/7.jpg" class="album-image" alt="">
-                            <img src="image/album/8.jpg" class="album-image" alt="">
-                        </div>
-                    </div>
-                    <div class="album-page">
-                        <div class="row">
-                            <img src="image/album/9.jpg" class="album-image" alt="">
-                            <img src="image/album/10.jpg" class="album-image" alt="">
-                            <img src="image/album/11.jpg" class="album-image" alt="">
-                            <img src="image/album/12.jpg" class="album-image" alt="">
-                        </div>
-                        <div class="row">
-                            <img src="image/album/13.jpg" class="album-image" alt="">
-                            <img src="image/album/14.jpg" class="album-image" alt="">
-                            <img src="image/album/15.jpg" class="album-image" alt="">
-                            <img src="image/album/16.jpg" class="album-image" alt="">
+                        <div class="album-page">
+                            <div class="row mb-3">
+                                <img src="image/album/9.jpg" class="album-image" alt="">
+                                <img src="image/album/10.jpg" class="album-image" alt="">
+                                <img src="image/album/11.jpg" class="album-image" alt="">
+                                <img src="image/album/12.jpg" class="album-image" alt="">
+                            </div>
+                            <div class="row">
+                                <img src="image/album/13.jpg" class="album-image" alt="">
+                                <img src="image/album/14.jpg" class="album-image" alt="">
+                                <img src="image/album/15.jpg" class="album-image" alt="">
+                                <img src="image/album/16.jpg" class="album-image" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="arrow-album arrow-album-left no-select"></div>
+            <div class="arrow-album arrow-album-right no-select"></div>
+            <div class="dot-container d-flex no-select">
+                <div class="dot-area">
+                    <div class="dot"></div>
+                </div> 
+                <div class="dot-area">
+                    <div class="dot"></div>
+                </div> 
+                <div class="dot dot-active"></div>
             </div>
         </div>
         <!-- content -->
@@ -129,5 +142,6 @@
         <!-- next -->
     </div>
     
+    <script src="js/album.js"></script>
 </body>
 </html>

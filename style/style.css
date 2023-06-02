@@ -126,7 +126,6 @@ img {
     letter-spacing: 0.5rem;
 }
 
-
 .container-fluid{
     padding: 0;
 }
@@ -287,6 +286,19 @@ img {
     animation: scrollAnimate 3s ease-in-out infinite;
 }
 
+@keyframes onloadAlbumAnimate{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.album-container{
+    animation: onloadAlbumAnimate .7s ease 1;
+}
+
 .album-content{
     display: flex;
     height: 100%;
@@ -296,13 +308,91 @@ img {
 }
 
 .album-page{
-    width: 100vw;
+    width: calc(100vw - 3rem);
     flex: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
     transform: translateX(0%);
+    transition: all .3s ease-in-out;
 }
 
 .album-image{
     width: 19rem;
+}
+
+.arrow-album{
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    width: 2.04rem;
+    height: 3.6rem;
+}
+
+.arrow-album-left{
+    left: 1.72rem;
+    opacity: 1;
+}
+
+.arrow-album-right{
+    right: 1.72rem;
+    opacity: 1;
+}
+
+.arrow-album-left::after{
+    content: "";
+    display: block;
+    width: 2.08rem;
+    height: 2.08rem;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    margin-top: -0.54rem;
+    box-sizing: border-box;
+    border-right: 2px solid #a2a9ae;
+    border-bottom: 2px solid #a2a9ae;
+    transform: rotate(135deg) skew(-15deg,-15deg);
+}
+
+.arrow-album-right::after{
+    content: "";
+    display: block;
+    width: 2.08rem;
+    height: 2.08rem;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    margin-top: -0.54rem;
+    box-sizing: border-box;
+    border-right: 2px solid #a2a9ae;
+    border-bottom: 2px solid #a2a9ae;
+    transform: rotate(-45deg) skew(-15deg,-15deg);
+}
+
+.dot-container{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot-area{
+    padding: .5rem;
+}
+
+.dot{
+    border: 0.02rem solid hsla(0,0%,56.5%,.5);
+    background: transparent;
+    width: .6rem;
+    height: .6rem;
+    transition: all .3s ease;
+}
+
+.dot-active{
+    margin: .5rem;
+    position: absolute;
+    border: 0.04rem solid #fff;
+    background: #5e5e5e;
+    left: 0%;
 }
