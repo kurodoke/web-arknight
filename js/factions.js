@@ -2,12 +2,14 @@ var sub__background = document.querySelector(".sub-scroll-animate");
 
 var wrapper__component = document.querySelector(".faction-wrapper");
 
+// add listener for mouse wheel so the content can being scroll horizontaly 
 wrapper__component.addEventListener("wheel", function(event) {
     event.preventDefault();
     this.style.scrollBehavior = "smooth";
     this.scrollLeft += event.deltaY * 10;
 })
 
+//listener when the content had been scrolled, so the background follow the movement
 wrapper__component.addEventListener("scroll", function(event) {
     let maxScroll = this.scrollWidth - this.clientWidth;
     let percentase = this.scrollLeft / maxScroll * 100;
@@ -15,6 +17,7 @@ wrapper__component.addEventListener("scroll", function(event) {
     sub__background.style.transform = `translateX(-${percentase}%)`;
 })
 
+//randomize text when onload
 var randomText__component = document.querySelector(".fraction-random-text");
 
 const delay = ms => new Promise(res => setTimeout(res, ms))

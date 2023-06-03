@@ -540,3 +540,40 @@ img {
     height: 1px;
     background: linear-gradient(-90deg, transparent ,#595a5c,transparent);
 }
+
+.faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr-line{
+    width: 60%;
+    margin: auto;
+}
+
+.faq-page {
+    color: #444;
+    cursor: pointer;
+    padding: 1rem 1rem;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body{
+    margin: auto;
+    width: 50%; 
+    padding: .5rem;
+    background-color: white;
+    display: none;
+    overflow: hidden; 
+    color: rgb(161, 158, 158);
+    transition: all 0.4s ease;
+}
+
+.active, .faq-page:hover {
+    background-color: #F9F9F9;
+}
