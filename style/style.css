@@ -81,37 +81,37 @@ img {
 }
 .font-mont-regular{
     color: rgb(212, 216, 221);
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
 }
 .font-mont-semibold{
     color: rgb(212, 216, 221);
-    font-family: 'Montserrat', sans-serif;
+    font-family:  sans-serif;
     font-weight: 600;
 }
 .font-mont-bold{
     color: rgb(212, 216, 221);
-    font-family: 'Montserrat', sans-serif;
+    font-family:  sans-serif;
     font-weight: 700;
 }
 .font-mont-black{
     color: rgb(212, 216, 221);
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
     font-weight: 900;
 }
 .font-libre-regular{
     color: rgb(212, 216, 221);
-    font-family: 'Libre Baskerville', serif;
+    font-family:  serif;
     font-weight: 400;
 }
 .font-libre-bold{
     color: rgb(212, 216, 221);
-    font-family: 'Libre Baskerville', serif;
+    font-family:  serif;
     font-weight: 700;
 }
 .font-bebas{
     color: rgb(212, 216, 221);
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
 }
 
