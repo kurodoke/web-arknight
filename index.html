@@ -15,14 +15,14 @@
 
         <!-- background sub -->
         <div class="position-absolute sub-main">
-            <img src="image/background-home.png" style="object-fit: cover;" alt="">
+            <img src="image/background-home.jpg" style="object-fit: cover; opacity: 50%; transform-origin: center; transform: rotateY(180deg);" alt="">
         </div>
         <!-- background sub -->
 
         <!-- navbar -->
         <nav class="navbar navbar-expand justify-content-between me-5 ms-5 pt-4 letter-spacing-sm">
             <div class="left-nav ms-3">
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand" href="index.html">
                     <img class="filter-contrast" src="image/logo-min.png" alt="" >
                 </a>
             </div>
@@ -48,7 +48,7 @@
                         <a href="help.html">help</a>
                     </li>
                     <li class="nav-item font-libre-regular" style="font-size: small;">
-                        <a href="">login</a>
+                        <a href="login.html">login</a>
                     </li>
                 </ul>
             </div>
@@ -58,11 +58,13 @@
         <!-- content -->
         <div class="position-absolute ms-5" style="top: calc(50% - 6.9rem);">
             <div class="position-relative content ms-3 no-select">
-                <div class="welcome-text font-geometos" style="font-size: medium; margin-bottom: 9rem;">
-                    <span>welcome</span> <span>to</span>
+                <div class="welcome-text font-geometos overflow-hidden" style="font-size: medium; margin-bottom: 9rem;">
+                    <div class="title-wrapper">
+                        <span>welcome</span> <span>to</span>
+                    </div>
                 </div>
                 
-                <div class="on-text font-geometos align-self-center letter-spacing" style="font-size: medium;">
+                <div class="slogan-index on-text font-geometos align-self-center letter-spacing" style="font-size: medium;">
                     <span>THE VIOLENCE IS NOWHERE END</span>
                 </div>
             </div>
@@ -76,8 +78,8 @@
         <!-- logo -->
 
         <!-- slogan -->
-        <div class="position-absolute ms-5 translate-middle-y opacity-50 font-bebas no-select align-self-center letter-spacing-lg" style="font-size: x-small;top: 90%;">
-            <span><span style="letter-spacing: 0;">------------</span> THE VIOLENCE IS NOWHERE END</span>
+        <div class="slogan position-absolute ms-5 translate-middle-y opacity-50 font-bebas no-select align-self-center letter-spacing-lg" style="font-size: x-small;top: 90%;">
+            <span><span style="letter-spacing: -2px;">----------------------</span> THE VIOLENCE IS NOWHERE END</span>
         </div>
         <!-- slogan -->
 
@@ -105,5 +107,6 @@
         <!-- next -->
     </div>
     
+    <script src="js/index.js"></script>
 </body>
 </html>

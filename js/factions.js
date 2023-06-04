@@ -44,20 +44,23 @@ function appendText(len){
 }
 
 window.onload = async function(event){
+    await delay(200);
     let startText = "//////////////////";
     let currentLength = 0;
     
     for(let i = 0; i < startText.length; i += 2){
         randomText__component.innerHTML += startText[i];
         randomText__component.innerHTML += startText[i+1];
-        await delay(200); //0.2s
+        await delay(120); //0.2s
     }
 
-    await delay(200)
+    await delay(200);
     
     for(let i = -1; i <= finishText.length; i++){
-        randomText__component.innerHTML = appendText(i) +  generateRandomText(i < 1 ? finishText.length : finishText.length - i);
-        await delay(80); //0.08s
+        randomText__component.innerHTML = appendText(i) +  generateRandomText(finishText.length - i);
+        await delay(60); //0.08s
+        randomText__component.innerHTML = appendText(i) +  generateRandomText(finishText.length - i);
+        await delay(60); //0.08s
     }
     
 }

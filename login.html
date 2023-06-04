@@ -7,15 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css">    
     <title>Document</title>
 </head>
 <body>
     <div class="container-fluid main position-relative">
-
         <!-- background sub -->
-        <div class="position-absolute sub-main">
-            <img src="image/background-help.png" style="object-fit: cover; opacity: 80%;" alt="">
+        <div class="position-absolute overflow-hidden half-sub-main" style="top: 50%; left: 0%; transform: translateY(-50%) rotateY(180deg); transform-origin: center;">
+            <img src="image/background-login.png" style="height: 100vh;" alt="">
         </div>
         <!-- background sub -->
 
@@ -56,27 +55,40 @@
         <!-- navbar -->
 
         <!-- content -->
-        <div class="position-absolute ms-5" style="top: calc(50% - 6.9rem);">
-            <div class="position-relative content ms-3">
-                <div class="welcome-text font-geometos no-select overflow-hidden" style="font-size: medium; margin-bottom: 9rem;">
-                    <div class="title-wrapper">
-                        <span>you</span> <span>need</span> <span>help?</span>
+        <div class="position-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%); animation: onLoadBG 1.5s ease 1;">
+            <div class="login-container position-relative content">
+                <form class="form" action="login.html" method="get">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="title-login d-flex font-bebas gap-3 align-self-center no-select">
+                            <span style="letter-spacing: -2px;">-------------</span>
+                            <h3 class="align-self-center font-geometos" style="font-size: larger;">LOGIN</h3>
+                            <span style="letter-spacing: -2px;">-------------</span>
+                        </div>
+                        <div class="input-login d-flex flex-column gap-2">
+                            <label for="email" class="font-geometos">email</label>
+                            <input type="text" id="email" required>
+                        </div>
+                        <div class="input-login d-flex flex-column gap-2">
+                            <label for="password" class="font-geometos">password</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <button class="button-login font-geometos mt-3" type="submit">log in</button>
                     </div>
-                </div>
-                <div class="on-text font-geometos align-self-center d-flex flex-column" style="font-size: x-small;">
-                    <span class="mb-2" style="font-size: small;">Contact Us with :</span>
-                    <span class="mb-1">_Tel : <span class="m-2" style="color: #b9bcc2;">0891234567890</span></span>
-                    <span class="mb-1">_Email : <span class="m-2" style="color: #b9bcc2;">arknights@email.com</span></span>
-                    <span class="mb-1">_Address : <span class="m-2" style="color: #b9bcc2;">somewhere located on planet terra.</span></span>
-                </div>
+                </form>
+
+                
+                <div class="corner" style="left: -.5rem ; top: -.5rem ;"></div>
+                <div class="corner" style="right: -.5rem ; top: -.5rem ;"></div>
+                <div class="corner" style="left: -.5rem ; bottom: -.5rem ;"></div>
+                <div class="corner" style="right: -.5rem ; bottom: -.5rem ;"></div>
             </div>
         </div>
         <!-- content -->
 
         <!-- logo -->
-        <div class="position-absolute translate-middle-y ms-5" style="top: calc(50% - 1.4rem);">
+        <!-- <div class="position-absolute translate-middle-y ms-5" style="top: calc(50% - 1.4rem);">
             <img class="filter-contrast title-logo ms-3" src="image/logo.png" alt="">                       
-        </div>
+        </div> -->
         <!-- logo -->
 
         
@@ -88,29 +100,9 @@
 
         <!-- next -->
         <div class="wrapper-next position-absolute d-flex flex-column" style="right: calc(0% + 4.5rem); top: 50%; animation-duration: 6s;">
-            <a href="faq.html" class="text-decoration-none mb-5">
+            <a href="register.html" class="text-decoration-none mb-5">
                 <div class="arrow d-flex align-items-center justify-content-end">
-                    <p class="font-geometos m-0 me-2" style="color: var(--main); font-size: x-small;">check the FAQ</p>
-                    <div class="icon-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 13">
-                            <path fill-rule="evenodd" stroke="#fff" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M3.249,1.105 L8.644,6.500 L3.249,11.895 "></path>
-                        </svg>
-                    </div>
-                    <div class="icon-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 13">
-                            <path fill-rule="evenodd" stroke="#fff" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M3.249,1.105 L8.644,6.500 L3.249,11.895 "></path>
-                        </svg>
-                    </div>
-                    <div class="icon-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 13">
-                            <path fill-rule="evenodd" stroke="#fff" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M3.249,1.105 L8.644,6.500 L3.249,11.895 "></path>
-                        </svg>
-                    </div>
-                </div>
-            </a>
-            <a href="tos.html" class="text-decoration-none mb-5">
-                <div class="arrow d-flex align-items-center justify-content-end">
-                    <p class="font-geometos m-0 me-2" style="color: var(--main); font-size: x-small;">Term Of Service</p>
+                    <p class="font-geometos m-0 me-2" style="color: var(--main); font-size: x-small;">register your account here</p>
                     <div class="icon-next">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 13">
                             <path fill-rule="evenodd" stroke="#fff" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M3.249,1.105 L8.644,6.500 L3.249,11.895 "></path>
@@ -129,10 +121,9 @@
                 </div>
             </a>
         </div>
-    
         <a href="index.html" class="wrapper-next position-absolute d-inline-block text-decoration-none" style="right: calc(0% + 4.5rem); top: 90%;">
             <div class="arrow d-flex align-items-center justify-content-end">
-                <p class="font-geometos m-0 me-2" style="color: var(--main); font-size: x-small;">this is the end</p>
+                <p class="font-geometos m-0 me-2" style="color: var(--main); font-size: x-small;">go back</p>
                 <div class="icon-next">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 13">
                         <path fill-rule="evenodd" stroke="#fff" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M3.249,1.105 L8.644,6.500 L3.249,11.895 "></path>
@@ -155,5 +146,6 @@
         </a>
         <!-- next -->
     </div>
+    
 </body>
 </html>
